@@ -37,7 +37,7 @@ class CartScreen extends ConsumerWidget {
               padding: const EdgeInsets.all(10),
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: isPortrait ? 1 : 2,
-                mainAxisExtent: 160, // ✅ FIX OVERFLOW
+                mainAxisExtent: 160,
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
               ),
