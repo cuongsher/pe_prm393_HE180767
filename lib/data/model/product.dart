@@ -21,7 +21,7 @@ class Product {
   void calculate() {
     subtotal = price * quantity;
     total = subtotal - discount;
-  }
+  }//ahhihih do ngoc
 
   factory Product.fromMap(Map<String, dynamic> map) {
     return Product(
