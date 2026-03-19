@@ -32,7 +32,6 @@ class CartScreen extends ConsumerWidget {
       appBar: AppBar(title: const Text("Cart")),
       body: Column(
         children: [
-          /// GRID VIEW
           Expanded(
             child: GridView.builder(
               padding: const EdgeInsets.all(10),
@@ -55,7 +54,6 @@ class CartScreen extends ConsumerWidget {
                     padding: const EdgeInsets.all(10),
                     child: Row(
                       children: [
-                        /// INFO
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,7 +73,6 @@ class CartScreen extends ConsumerWidget {
 
                               const SizedBox(height: 8),
 
-                              /// QUANTITY
                               Row(
                                 children: [
                                   IconButton(
@@ -93,7 +90,6 @@ class CartScreen extends ConsumerWidget {
                           ),
                         ),
 
-                        /// DELETE BUTTON
                         IconButton(
                           icon: const Icon(Icons.close, color: Colors.red),
                           onPressed: () => vm.delete(p.id!),
@@ -106,7 +102,6 @@ class CartScreen extends ConsumerWidget {
             ),
           ),
 
-          /// TOTAL SECTION
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(16),
